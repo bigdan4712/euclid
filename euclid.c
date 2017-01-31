@@ -2,14 +2,23 @@
 
 int main(void) {
 
-	int a, b, d;
+	long long int a, b, d;
 
-	asm( "
+	while(1){
+		printf("Enter two digits greater than zero: \n");
+		scanf("%lld %lld",&a,&b);
+		if((a==0) && (b==0)) 
+			printf("A and B cannot both be zero!\n");
+		else break;
+	}
+	
+
+	/*asm( "
 
 	:
 	:
 	:
-	"\n);
+	"\n);*/
 
 	return 0;
 
