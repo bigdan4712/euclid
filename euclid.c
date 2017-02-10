@@ -3,7 +3,7 @@
 
 int main(void) {
 
-	long long int a, b, d, x, y;
+	long long int a, b, d, x, y, xnew, ynew, r, tmp;
 
 	while(1){
 		printf("Enter two digits greater than zero: \n");
@@ -19,7 +19,7 @@ int main(void) {
 	:
 	:
 	:
-	"\n);*/
+	 );*/
 
 	return 0;
 
