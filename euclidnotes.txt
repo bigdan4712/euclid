@@ -1,0 +1,53 @@
+a register is for multiply, divide, and modulo.
+d register is for multiply, divide, and modulo.
+
+input		processing		out
+a
+b
+c
+d
+si		x
+di		y
+8		q
+9		r
+10		xnext
+11		ynext
+12		a
+13		tmp
+
+to get zero, XoR with its self to make zero.  to make one, xor with itsself and then inc.
+
+
+while loops:
+
+jmp	2f
+1: body of loop
+~
+~
+~
+2:andq rbx, rbx
+  jnz  1b
+
+
+a/b a mod b
+
+movq  r12, rax
+cqto
+idiv rbx
+
+multiply address:
+movl r8, rax
+imul r10
+sub rsi, rax
+neg rax
+mov
+rax, r10
+
+other way:
+mov r10, rax
+mov rsi, r10
+imul r8
+sub rax, r10
+
+q*xnew first, then x - result
+
